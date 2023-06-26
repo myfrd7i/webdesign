@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDesign</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="top">
+    <div class="container">
+        <header>
+            <!-- ↓サイト名は大見出しh1を設定する -->
+            <h1><a href="index.html">WebDesign</a></h1>
+            <!-- ↓メニュー項目はリストul-liで囲む -->
+            <nav>
+                <ul>
+                    <!-- ↓リンク設定はAit+W aタグを入力 -->
+                    <!-- ↓href（エイチレフ）"”内はCtrl/から→index.htmlを選択 -->
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <!-- リンク先ページがない場合は"#"を仮にいれとく -->
+                    <li><a href="next.html">下層ページの構成</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- メインビジュアル -->
+        <!-- imgは<>なしで入力→src=""内はctrl+spaceで候補から画像選択 -->
+        <!-- imgタグ一連は<p>で囲む -->
+        <p class="visual"><img src="img/web.jpg" alt="（Webページ制作言語）"></p>
+        <main>
+            <!--↓ 見出しと本文のセットで<section>タグで囲む -->
+            <section>
+                <!-- 中見出しは<h2> -->
+                <h2>TOPページの見出し</h2>
+                <!-- 普通の文章（本文）は<p> -->
+                <!-- ラップタグの入力方法：本文を選択しながら、Alt+Wでタグ入力画面にpを入力 -->
+                <p>TOPページの大見出し（h1）はサイト名に設定するので、mainタグ内は中見出し（h2）から使い始める。</p>
+            </section>
+            <section>
+                <h2>セクションとは</h2>
+                <p>見出しとその内容は、sectionタグでグループ化する。小見出しがある場合、中見出し（h2）のsectionの中に小見出し（h3）のsectionが入ることもある。
+                </p>
+            </section>
+            <!-- ↓<aside>補足情報バナーなど -->
+            <aside>
+                <p>バナーや注意書き、サイドバーなどの補足情報はasideで囲む。</p>
+            </aside>
+        </main>
+    </div>
+    <footer>
+        <p class="pagetop"><a href="#top"><img src="img/gotop.svg" width="32" alt="ページトップへ"></a></p>
+        <!-- 著作権情報は<small>で囲む -->
+        <!-- <small>はインライン要素のため<p>の中に入れる -->
+        <!-- 特殊記号は右クリックから「コマンドパレット」→htmlを入力し、「convert to HTML Entities」を選択して変換 -->
+        <p class="copyright">
+            <small>&copy;2021 WebDesign.
+                <span>All Rights Reserved.</span>
+            </small>
+        </p>
+    </footer>
+</body>
+</html>

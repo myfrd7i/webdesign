@@ -1,0 +1,35 @@
+@import url(common.css);
+
+/*［メインビジュアルの書式］ */
+.visual {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/*［main sectionの書式］ */
+main section {
+  background-color: #bbd7e7;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/*［main section h2の書式 */
+main section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+/*［main section pの書式］ */
+main section p {
+  line-height: 1.5;
+}
+
+/* スマホ縦設定 */
+@media (max-width: 575px) {
+  p.visual img {
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+  }
+}
